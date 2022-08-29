@@ -1,0 +1,85 @@
+<?php
+require_once '../php/functions.php';
+?>
+
+
+
+<!--
+      THIS PAGE IS DESIGNED BY W3layouts
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign Up-Futo Students Forum</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Sign Up, futo students forum" />
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<!-- Custom Theme files -->
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/snow.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- //Custom Theme files -->
+<style>
+abbr {
+text-decoration:none;
+}
+</style>
+
+<!-- ICON SET-->
+<link rel="icon" href="../images/fsf.jpg" type="image/jpg">
+<!-- //ICON SET-->
+
+<!-- web font -->
+<link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+<!-- //web font -->
+
+</head>
+<body>
+
+
+<div class="top-buttons-agileinfo">
+<a href="login.php">Log In</a><a href="signup.php" class="active">Sign Up</a>
+</div>
+
+<div class="main-agileits">
+<!--form-stars-here-->
+		<div class="form-w3-agile">
+			<h2 class="sub-agileits-w3layouts" id="alert">Join the Students Forum</h2>
+			
+			<?php
+		echo	'<form action="'.register($conn).'" method="POST">
+					<input type="text" name="username" title="please enter a Username" placeholder="Username" required />
+					<input type="email" name="email" title="please supply an email"  placeholder="Email" required="" />
+					<input type="text" name="year" required="" title="please enter your Year Of Entry" placeholder="Year Of Entry e.g 2010" pattern="[0-9]{4}" />
+					<input type="text" name="faculty"  title="please enter your Faculty In Block" pattern="[Aa-Zz]{4}" placeholder="Faculty" required="" />
+					<input type="text" name="phone"   title="Enter your phone number" placeholder="Phone Number" pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="18" required="" />
+					<input type="text" name="gender"  title="your Gender" placeholder="Male/Female" required="" />
+					<input type="password" name="password" title="Enter a valid Password" placeholder="Password" required="" />
+					<input type="password" name="password_again"  title="Re-Enter your Password" placeholder="Confirm Password" required="" />
+				<div style="color:white; text-transform:lowercase;">
+					<input type="checkbox" name="checkbox" title="I am a bonafide Futo Student" required=""  /> <span style="text-transform:uppercase;">I</span> am a well behaved <abbr title="federal university of technology owerri">FUTO<abbr> student
+				</div>
+				<div class="submit-w3l">
+					<input type="submit" name="submit" value="Sign up">
+				</div>
+			</form>';
+			?>
+			
+			
+			
+		</div>
+		</div>
+<!--//form-ends-here-->
+
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
+</body>
+</html>

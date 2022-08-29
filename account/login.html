@@ -1,0 +1,81 @@
+<!--
+<php
+require_once '../php/functions.php';
+?>-->
+
+
+<!--
+      THIS PAGE IS DESIGNED BY W3layouts
+	  edited by the author
+Author: byte
+Author URL: http://byte.io
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign In-Futo Students Forum</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Log In, futo students forum" />
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<!-- Custom Theme files -->
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/snow.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- //Custom Theme files -->
+
+<!-- ICON SET-->
+<link rel="icon" href="../images/fsf.jpg" type="image/jpg">
+<!--- //Icon set>
+
+<!-- web font -->
+<link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+<!-- //web font -->
+
+</head>
+<body>
+
+
+<div class="top-buttons-agileinfo">
+<a href="login.php"  class="active">Log In</a><a href="signup.php">Sign Up</a>
+</div>
+<div class="main-agileits">
+
+<!--form-stars-here-->		
+		<div class="form-w3-agile">
+			<h2 class="sub-agileits-w3layouts" id="alert">Log In</h2>
+				<?php
+			echo	'<form action="'.login($conn).'" method="POST">
+						<input type="text" name="username" placeholder="Username" required="" />
+						<input type="password" name="password" placeholder="Password" required="" />
+					<div style="color:white; text-transform:lowercase;">
+						<input type="checkbox" name="checkbox" title="I accept cookies" required=""  /> <span style="text-transform:uppercase;">I</span> accept cookies
+					</div>
+					<div class="submit-w3l">
+						<input type="submit" value="Log In" name="submit" >
+					</div>
+					<p class="p-bottom-w3ls"><a href="signup.php">Sign Up here</a>if you do not have an account yet.</p>
+				</form>';
+				?>
+				<!--//form-ends-here-->
+			
+		</div>
+</div>
+
+
+<!-- copyright -->
+	<div class="copyright w3-agile">
+							<!-- CHECK HERE!! -->
+				   <p><a href="../index.php">| Home |</a><br />&copy; 2017 Futo Students Forum  All Rights Reserved.<br>Designed by W3layouts</p>
+	</div>
+	<!-- //copyright --> 
+
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
+</body>
+</html>
